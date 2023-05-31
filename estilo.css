@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;800&display=swap');
+
+
+:root{
+    --cor1: #111344;
+    --cor2: #2E4052;
+    --cor3: #031926;
+    --cor4: #DAE0F2;
+    --cor5: #EFE9E7;
+}
+
+header{
+    background-image: url(consoleb.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    padding: 160px;
+    border-bottom: 2px double var(--cor1);
+}
+
+header h1{
+    position: relative;
+    color: var(--cor5);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor5);
+    margin: 0px;
+    background-image: url(fundo.gif);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    background-color: black;
+}
+
+footer{
+    background-color: black;
+    color: wheat;
+    padding: 60px;
+    margin-top: 300px;
+    text-align: center;
+}
+footer a{
+    text-decoration: underline;
+    color: wheat;
+}
+
+
+/*ID's*/
+#intro-pag{
+    color: var(--cor5);
+    margin-bottom: 60px;
+}
+
+#intro-pag h2{
+    border-bottom: 2px solid var(--cor5);
+    padding: 7px;
+    width: 420px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#intro-pag a{
+    background-color: var(--cor4);
+    border: 5px solid;
+    border-color: var(--cor4);
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: block;
+    width: 200px;
+    text-align: center;
+    color: var(--cor3);
+    text-decoration: none;
+    transition: background-color s;
+    transition: border-color 1s;
+    transition: color 0.5s;
+}
+
+#intro-pag a:hover{
+    background-color: var(--cor3);
+    border: 5px solid var(--cor3);
+    color: var(--cor4);
+}
+
+#mario{
+    background-image: url(./extra/mario.gif);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    animation: moveBackground 10s linear infinite;
+}
+#pac{
+    background-image: url(./extra/pac.gif);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    animation: moveBackground 10s linear infinite;
+}
+#dk{
+    background-image: url(./extra/donk.gif);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: left bottom;
+}
+@keyframes moveBackground {
+    from {
+      background-position: -20% 0;
+    }
+    to {
+      background-position: 120% 0;
+    }
+  }
+
+
+/*Classes*/
+.conteudo-padrao{
+    text-align: center;
+    border: 5px solid var(--cor5);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 35px 50px 35px 50px;
+}
+
+.conteudo-padrao p{
+    text-align: justify;
+    line-height: 20px;
+    word-spacing: 2px;
+    text-indent: 25px;
+}
+
+.conteudo-padrao img{
+    border: 7px outset var(--cor4);
+    margin: 10px;
+    box-shadow: 13px 13px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.titulo{
+    text-align: center;
+    font-size: 90px;
+    padding: 70px;
+    color: var(--cor5)
+}
+
+.grande-div{
+    background-color: var(--cor1);
+    background-attachment: fixed;
+    padding: 40px;
+    text-align: center;
+    margin: 50px;
+    border-radius: 10px;
+    border: 5px double;
+    animation: animacao-borda 3s infinite linear;
+}
+
+@keyframes animacao-borda {
+    0% {
+        border-color: #ffffff;
+    }
+    50% {
+        border-color: #0000aa;
+    }
+    100% {
+        border-color: #ffffff;
+    }
+}
